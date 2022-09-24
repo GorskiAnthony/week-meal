@@ -1,5 +1,5 @@
 import { SunIcon, MoonIcon } from "@heroicons/react/20/solid/index.js";
-import DetailDate from "../../services/DetailDate.js";
+import DetailDate from "@services/DetailDate.js";
 
 export default function Card({ meal }) {
   const date = new DetailDate(meal.date);

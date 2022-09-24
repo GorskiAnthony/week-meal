@@ -1,0 +1,74 @@
+{
+  "meals" : [
+    {
+      "id": "1",
+      "date": "2022-09-19",
+      "meal": [
+        {
+          "midi": "couscous au curry",
+          "soir": "couscous au coco"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "date": "2022-09-20",
+      "meal": [
+        {
+          "midi": "Poisson au curry",
+          "soir": "Poisson au coco"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "date": "2022-09-21",
+      "meal": [
+        {
+          "midi": "Tomates au curry",
+          "soir": "Tomates au coco"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "date": "2022-09-22",
+      "meal": [
+        {
+          "midi": "Frites au curry",
+          "soir": "Frites au coco"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "date": "2022-09-23",
+      "meal": [
+        {
+          "midi": "Poulet au curry",
+          "soir": "Poulet au coco"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "date": "2022-09-24",
+      "meal": [
+        {
+          "midi": "riz au curry",
+          "soir": "riz au coco"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "date": "2022-09-25",
+      "meal": [
+        {
+          "midi": "pâtes au curry",
+          "soir": "pâtes au coco"
+        }
+      ]
+    }
+  ]
+}
