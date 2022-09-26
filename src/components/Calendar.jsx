@@ -1,18 +1,24 @@
 import React, { useState } from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
+import DatePicker from "sassy-datepicker";
+import "../assets/Datepicker.css";
 
 export default function MyCalendar() {
-  const [value, onChange] = useState(new Date());
+  const [date, setDate] = useState(new Date());
+
+  const onChange = (newDate) => {
+    console.log(`New date selected - ${newDate.toString()}`);
+    setDate(newDate);
+  };
 
   return (
-    <div>
-      <Calendar
+    <>
+      <DatePicker
         onChange={onChange}
-        value={value}
-        className="react-calendar__tile--hover"
+        value={date}
+        weekStartsFrom="Monday"
+        lang={"fr"}
       />
-      <p> {value.toString()}</p>
-    </div>
+      <p>{date.toString()}</p>
+    </>
   );
 }
