@@ -1,12 +1,13 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Accueil", href: "#", current: true },
-  { name: "Historique", href: "#", current: false },
-  { name: "Plannifier ma semaine", href: "#", current: false },
+  { name: "Accueil", href: "/", current: true },
+  { name: "Plannifier ma semaine", href: "/week", current: false },
+  { name: "Historique", href: "/historique", current: false },
 ];
 
 function classNames(...classes) {
@@ -47,9 +48,9 @@ export default function Navbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
+                        to={item.href}
                         key={item.name}
-                        href={item.href}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
@@ -59,7 +60,7 @@ export default function Navbar() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
