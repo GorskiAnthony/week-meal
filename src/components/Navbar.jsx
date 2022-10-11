@@ -5,7 +5,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Accueil", href: "#", current: true },
-  { name: "Ma semaine", href: "#", current: false },
   { name: "Historique", href: "#", current: false },
   { name: "Plannifier ma semaine", href: "#", current: false },
 ];
